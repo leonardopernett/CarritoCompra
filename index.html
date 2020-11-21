@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrito de Compra</title>
+</head>
+<link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
+<body>
+  
+  <div class="container">
+      <h1 class="text-center">Carrito</h1>
+      <hr>
+      <div class="row" id ="productos-lista">
+      </div>
+    </div>
+   
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 mt-5">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>ITEM</th>
+                <th>CANTIDAD</th>
+                <th>ACTIOS</th>
+                <th>PRECIO</th>
+              </tr>
+            </thead>
+            <tbody id="producto-add"> </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+
+      <template id="producto-template">
+        <div class="col-12 col-md-2 col-sm-2">
+          <div class="card">
+            <img src="https://picsum.photos/id/40/600" alt="" class="img-fluid">
+             <div class="card-body">
+               <h3>titulo</h3>
+               <p>price: $ 500</p>
+               <button class="btn btn-primary btn-block">comprar</button>
+             </div>
+          </div>
+        </div>
+      </template>
+
+      <template id="carrito-template">
+        <tr>
+          <td>1</td>
+          <td>item</td>
+          <td>5</td>
+          <td>
+            <button class="btn btn-success">+</button>
+            <button class="btn btn-danger">-</button>
+            
+          </td>
+          <td>$ <span>500</span> </td>
+        </tr>
+    </template>
+
+      
+
+
+   
+
+  
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
