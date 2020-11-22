@@ -29,6 +29,11 @@
               </tr>
             </thead>
             <tbody id="producto-add"> </tbody>
+            <tfoot>
+               <tr id="producto-footer">
+                 <td>Carrito Vacio</td>
+               </tr>
+            </tfoot>
           </table>
         </div>
       </div>
@@ -54,14 +59,21 @@
           <td>item</td>
           <td>5</td>
           <td>
-            <button class="btn btn-success">+</button>
-            <button class="btn btn-danger">-</button>
-            
+            <button class="btn btn-success add">+</button>
+            <button class="btn btn-danger dis">-</button>
           </td>
           <td>$ <span>500</span> </td>
         </tr>
+     </template>
+     
+     <template id="footer-template">
+       <th colspan="2">total producto</th>
+        <td>1</td>
+        <td>
+          <button class="btn btn-danger btn-sm" id="btn">reiniciar</button>
+        </td>
+        <td>1</td>
     </template>
-
       
 
 
